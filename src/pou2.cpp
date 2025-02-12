@@ -26,6 +26,8 @@ void POU2()
 
   }
 
+  print_debug("Second stage\r\n");
+
   // Код, выполняемый циклически:
   
 }

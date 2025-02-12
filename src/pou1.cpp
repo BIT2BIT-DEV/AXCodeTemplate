@@ -18,16 +18,29 @@ using namespace plc;
 
   ModbusBuffer<1520> buffer;
 
-  ModbusSlave slave_com2 ({
-      .com = COM2,
-      .holding_registers = &buffer,
-      .input_registers   = &buffer,
-      .address   = 15,
-      .baudrate  = 115200,
-      .parity    = COM_PARITY_NONE,
-      .stop_bits = 2
-      });
-
+  ModbusMaster modbus_master ({
+    // Номер COM-порта
+    .com              = COM1,
+    // Список устройств для автоматического опроса
+    .devices          = {},
+    // Скорость обмена, бит/с
+    .baudrate         = 115200,
+    // Четность
+    .parity           = COM_PARITY_NONE,
+    // Кол-во стоп-битов
+    .stop_bits        = 1,
+    // Пауза перед отправкой команды опроса (мс)
+    .poll_delay       = 0,
+    // Пауза после отправки широковещательного запроса (мс)
+    .turnaround_delay = 100,
+    // Время ожидания ответа (мс)
+    .response_timeout = 300,
+    // Количество попыток связи
+    .failed_attempts  = 3,
+    // Время восстановления опроса (мс)
+    .restore_timeout  = 3000
+  });
+  
   uint32_t i = 0;
 
   void delay(uint32_t ms)
@@ -49,7 +62,7 @@ void POU1()
   }
 
   // Код, выполняемый циклически:
-  print_debug("Baudrate %d\t Address %d\n\r", slave_com2.baudrate, slave_com2.address);
+  print_debug("Baudrate %d\t Address %d\n\r", modbus_master.baudrate, modbus_master.poll_delay);
   print_debug("GetSysTicks %d.%d s\n\r", GetSysTicks()/1000, GetSysTicks()%1000);
   print_debug(RTC.getTimeString());
   print_debug("\r\n\r\n");
