@@ -71,6 +71,7 @@ namespace device
      * \param inputs Битовая маска входов
      * \param nc_inputs Битовая маска нормально-закрытых входов
      * \param delay_tick Выдержка времени входов в тиках операционной системы
+     * (не более половины максимально возможного целого числа)
     */
     constexpr DInputsGroup(
       const uint8_t size,

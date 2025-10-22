@@ -2,7 +2,7 @@
 project(AXCode_CPU_target
         LANGUAGES C CXX ASM
         DESCRIPTION "Таргет для компиляции пользовательской программы AXCode в целевом процессорном модуле"
-        VERSION 1.1.1
+        VERSION 1.1.3
         )
 
 add_library(${PROJECT_NAME} INTERFACE)

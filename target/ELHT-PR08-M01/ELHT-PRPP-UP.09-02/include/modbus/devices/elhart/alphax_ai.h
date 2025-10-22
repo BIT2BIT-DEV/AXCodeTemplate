@@ -58,7 +58,7 @@ namespace modbus::devices::elhart
       DINPUT_AINPUT1_STATUS_ADC_ERROR        = 4 + DINPUT_AINPUT1_STATUS_START,
       //! Ошибка компенсации температуры холодного спая аналогового входа №1
       DINPUT_AINPUT1_STATUS_JUNCTION_ERROR   = 5 + DINPUT_AINPUT1_STATUS_START,
-      //! Ошибка компенсации температуры холодного спая аналогового входа №1
+      //! Ошибка юстировки аналогового входа №1
       DINPUT_AINPUT1_STATUS_ADJUSTMENT_ERROR = 6 + DINPUT_AINPUT1_STATUS_START,
       //! Кол-во каналов статуса аналогового входа №1
       DINPUT_AINPUT1_STATUS_SIZE             = 7,
@@ -77,7 +77,7 @@ namespace modbus::devices::elhart
       DINPUT_AINPUT2_STATUS_ADC_ERROR        = 4 + DINPUT_AINPUT2_STATUS_START,
       //! Ошибка компенсации температуры холодного спая аналогового входа №2
       DINPUT_AINPUT2_STATUS_JUNCTION_ERROR   = 5 + DINPUT_AINPUT2_STATUS_START,
-      //! Ошибка компенсации температуры холодного спая аналогового входа №2
+      //! Ошибка юстировки аналогового входа №2
       DINPUT_AINPUT2_STATUS_ADJUSTMENT_ERROR = 6 + DINPUT_AINPUT2_STATUS_START,
       //! Кол-во каналов статуса аналогового входа №2
       DINPUT_AINPUT2_STATUS_SIZE             = 7,
@@ -96,7 +96,7 @@ namespace modbus::devices::elhart
       DINPUT_AINPUT3_STATUS_ADC_ERROR        = 4 + DINPUT_AINPUT3_STATUS_START,
       //! Ошибка компенсации температуры холодного спая аналогового входа №3
       DINPUT_AINPUT3_STATUS_JUNCTION_ERROR   = 5 + DINPUT_AINPUT3_STATUS_START,
-      //! Ошибка компенсации температуры холодного спая аналогового входа №3
+      //! Ошибка юстировки аналогового входа №3
       DINPUT_AINPUT3_STATUS_ADJUSTMENT_ERROR = 6 + DINPUT_AINPUT3_STATUS_START,
       //! Кол-во каналов статуса аналогового входа №3
       DINPUT_AINPUT3_STATUS_SIZE             = 7,
@@ -115,7 +115,7 @@ namespace modbus::devices::elhart
       DINPUT_AINPUT4_STATUS_ADC_ERROR        = 4 + DINPUT_AINPUT4_STATUS_START,
       //! Ошибка компенсации температуры холодного спая аналогового входа №4
       DINPUT_AINPUT4_STATUS_JUNCTION_ERROR   = 5 + DINPUT_AINPUT4_STATUS_START,
-      //! Ошибка компенсации температуры холодного спая аналогового входа №4
+      //! Ошибка юстировки аналогового входа №4
       DINPUT_AINPUT4_STATUS_ADJUSTMENT_ERROR = 6 + DINPUT_AINPUT4_STATUS_START,
       //! Кол-во каналов статуса аналогового входа №4
       DINPUT_AINPUT4_STATUS_SIZE             = 7,
@@ -134,7 +134,7 @@ namespace modbus::devices::elhart
       DINPUT_AINPUT5_STATUS_ADC_ERROR        = 4 + DINPUT_AINPUT5_STATUS_START,
       //! Ошибка компенсации температуры холодного спая аналогового входа №5
       DINPUT_AINPUT5_STATUS_JUNCTION_ERROR   = 5 + DINPUT_AINPUT5_STATUS_START,
-      //! Ошибка компенсации температуры холодного спая аналогового входа №5
+      //! Ошибка юстировки аналогового входа №5
       DINPUT_AINPUT5_STATUS_ADJUSTMENT_ERROR = 6 + DINPUT_AINPUT5_STATUS_START,
       //! Кол-во каналов статуса аналогового входа №5
       DINPUT_AINPUT5_STATUS_SIZE             = 7,
@@ -153,7 +153,7 @@ namespace modbus::devices::elhart
       DINPUT_AINPUT6_STATUS_ADC_ERROR        = 4 + DINPUT_AINPUT6_STATUS_START,
       //! Ошибка компенсации температуры холодного спая аналогового входа №6
       DINPUT_AINPUT6_STATUS_JUNCTION_ERROR   = 5 + DINPUT_AINPUT6_STATUS_START,
-      //! Ошибка компенсации температуры холодного спая аналогового входа №6
+      //! Ошибка юстировки аналогового входа №6
       DINPUT_AINPUT6_STATUS_ADJUSTMENT_ERROR = 6 + DINPUT_AINPUT6_STATUS_START,
       //! Кол-во каналов статуса аналогового входа №6
       DINPUT_AINPUT6_STATUS_SIZE             = 7,
@@ -172,7 +172,7 @@ namespace modbus::devices::elhart
       DINPUT_AINPUT7_STATUS_ADC_ERROR        = 4 + DINPUT_AINPUT7_STATUS_START,
       //! Ошибка компенсации температуры холодного спая аналогового входа №7
       DINPUT_AINPUT7_STATUS_JUNCTION_ERROR   = 5 + DINPUT_AINPUT7_STATUS_START,
-      //! Ошибка компенсации температуры холодного спая аналогового входа №7
+      //! Ошибка юстировки аналогового входа №7
       DINPUT_AINPUT7_STATUS_ADJUSTMENT_ERROR = 6 + DINPUT_AINPUT7_STATUS_START,
       //! Кол-во каналов статуса аналогового входа №7
       DINPUT_AINPUT7_STATUS_SIZE             = 7,
@@ -191,7 +191,7 @@ namespace modbus::devices::elhart
       DINPUT_AINPUT8_STATUS_ADC_ERROR        = 4 + DINPUT_AINPUT8_STATUS_START,
       //! Ошибка компенсации температуры холодного спая аналогового входа №8
       DINPUT_AINPUT8_STATUS_JUNCTION_ERROR   = 5 + DINPUT_AINPUT8_STATUS_START,
-      //! Ошибка компенсации температуры холодного спая аналогового входа №8
+      //! Ошибка юстировки аналогового входа №8
       DINPUT_AINPUT8_STATUS_ADJUSTMENT_ERROR = 6 + DINPUT_AINPUT8_STATUS_START,
       //! Кол-во каналов статуса аналогового входа №8
       DINPUT_AINPUT8_STATUS_SIZE             = 7

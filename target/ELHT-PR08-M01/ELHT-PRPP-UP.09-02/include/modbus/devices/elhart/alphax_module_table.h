@@ -737,7 +737,7 @@ namespace modbus::devices::elhart::alphax_parameter
   inline const menu::var<uint16_t> dinput_ton_di1{{
     .default_value {20},
     .min_value     {0},
-    .max_value     {65535}
+    .max_value     {50000}
   }};
   //! Задержка включения (TON) DI2, x * 500 мкс
   inline const menu::var<uint16_t> dinput_ton_di2{
@@ -805,7 +805,7 @@ namespace modbus::devices::elhart::alphax_parameter
   inline const menu::var<uint16_t> dinput_tof_di1{{
     .default_value {20},
     .min_value     {0},
-    .max_value     {65535}
+    .max_value     {50000}
   }};
   //! Задержка выключения (TOF) DI2, x * 500 мкс
   inline const menu::var<uint16_t> dinput_tof_di2{
@@ -1004,7 +1004,7 @@ namespace modbus::devices::elhart::alphax_parameter
   inline const menu::var<uint16_t> doutput_ton_do1{{
     .default_value {0},
     .min_value     {0},
-    .max_value     {65535}
+    .max_value     {1000}
   }};
   //! Задержка включения (TON) DO2, x * 1 с
   inline const menu::var<uint16_t> doutput_ton_do2{
@@ -1072,7 +1072,7 @@ namespace modbus::devices::elhart::alphax_parameter
   inline const menu::var<uint16_t> doutput_tof_do1{{
     .default_value {0},
     .min_value     {0},
-    .max_value     {65535}
+    .max_value     {1000}
   }};
   //! Задержка выключения (TOF) DO2, x * 1 с
   inline const menu::var<uint16_t> doutput_tof_do2{
@@ -1499,73 +1499,73 @@ namespace modbus::devices::elhart::alphax_parameter
 
 
   //! Коррекция нижнего уровня аналогового сигнала, AI1
-  inline const menu::var<uint16_t> ainput_level_low_ai1{{
+  inline const menu::var<int16_t> ainput_level_low_ai1{{
     .default_value {0},
-    .min_value     {0},
-    .max_value     {65535}
+    .min_value     {-32768},
+    .max_value     {32767}
   }};
   //! Коррекция нижнего уровня аналогового сигнала, AI2
-  inline const menu::var<uint16_t> ainput_level_low_ai2{
+  inline const menu::var<int16_t> ainput_level_low_ai2{
     ainput_level_low_ai1
   };
   //! Коррекция нижнего уровня аналогового сигнала, AI3
-  inline const menu::var<uint16_t> ainput_level_low_ai3{
+  inline const menu::var<int16_t> ainput_level_low_ai3{
     ainput_level_low_ai1
   };
   //! Коррекция нижнего уровня аналогового сигнала, AI4
-  inline const menu::var<uint16_t> ainput_level_low_ai4{
+  inline const menu::var<int16_t> ainput_level_low_ai4{
     ainput_level_low_ai1
   };
   //! Коррекция нижнего уровня аналогового сигнала, AI5
-  inline const menu::var<uint16_t> ainput_level_low_ai5{
+  inline const menu::var<int16_t> ainput_level_low_ai5{
     ainput_level_low_ai1
   };
   //! Коррекция нижнего уровня аналогового сигнала, AI6
-  inline const menu::var<uint16_t> ainput_level_low_ai6{
+  inline const menu::var<int16_t> ainput_level_low_ai6{
     ainput_level_low_ai1
   };
   //! Коррекция нижнего уровня аналогового сигнала, AI7
-  inline const menu::var<uint16_t> ainput_level_low_ai7{
+  inline const menu::var<int16_t> ainput_level_low_ai7{
     ainput_level_low_ai1
   };
   //! Коррекция нижнего уровня аналогового сигнала, AI8
-  inline const menu::var<uint16_t> ainput_level_low_ai8{
+  inline const menu::var<int16_t> ainput_level_low_ai8{
     ainput_level_low_ai1
   };
 
 
   //! Коррекция верхнего уровня аналогового сигнала, AI1
-  inline const menu::var<uint16_t> ainput_level_high_ai1{{
+  inline const menu::var<int16_t> ainput_level_high_ai1{{
     .default_value {10000},
-    .min_value     {0},
-    .max_value     {65535}
+    .min_value     {-32768},
+    .max_value     {32767}
   }};
   //! Коррекция верхнего уровня аналогового сигнала, AI2
-  inline const menu::var<uint16_t> ainput_level_high_ai2{
+  inline const menu::var<int16_t> ainput_level_high_ai2{
     ainput_level_high_ai1
   };
   //! Коррекция верхнего уровня аналогового сигнала, AI3
-  inline const menu::var<uint16_t> ainput_level_high_ai3{
+  inline const menu::var<int16_t> ainput_level_high_ai3{
     ainput_level_high_ai1
   };
   //! Коррекция верхнего уровня аналогового сигнала, AI4
-  inline const menu::var<uint16_t> ainput_level_high_ai4{
+  inline const menu::var<int16_t> ainput_level_high_ai4{
     ainput_level_high_ai1
   };
   //! Коррекция верхнего уровня аналогового сигнала, AI5
-  inline const menu::var<uint16_t> ainput_level_high_ai5{
+  inline const menu::var<int16_t> ainput_level_high_ai5{
     ainput_level_high_ai1
   };
   //! Коррекция верхнего уровня аналогового сигнала, AI6
-  inline const menu::var<uint16_t> ainput_level_high_ai6{
+  inline const menu::var<int16_t> ainput_level_high_ai6{
     ainput_level_high_ai1
   };
   //! Коррекция верхнего уровня аналогового сигнала, AI7
-  inline const menu::var<uint16_t> ainput_level_high_ai7{
+  inline const menu::var<int16_t> ainput_level_high_ai7{
     ainput_level_high_ai1
   };
   //! Коррекция верхнего уровня аналогового сигнала, AI8
-  inline const menu::var<uint16_t> ainput_level_high_ai8{
+  inline const menu::var<int16_t> ainput_level_high_ai8{
     ainput_level_high_ai1
   };
 
@@ -2274,8 +2274,8 @@ namespace modbus::devices::elhart::alphax_parameter
   //! Нижний предел нормализации аналогового выхода AO1
   inline const menu::var<int16_t> aoutput_normalize_low_ao1{{
     .default_value {0},
-    .min_value     {-32768},
-    .max_value     {32767}
+    .min_value     {-100},
+    .max_value     {10100}
   }};
   //! Нижний предел нормализации аналогового выхода AO2
   inline const menu::var<int16_t> aoutput_normalize_low_ao2{
@@ -2294,8 +2294,8 @@ namespace modbus::devices::elhart::alphax_parameter
   //! Верхний предел нормализации аналогового выхода AO1
   inline const menu::var<int16_t> aoutput_normalize_high_ao1{{
     .default_value {10000},
-    .min_value     {-32768},
-    .max_value     {32767}
+    .min_value     {-100},
+    .max_value     {10100}
   }};
   //! Верхний предел нормализации аналогового выхода AO2
   inline const menu::var<int16_t> aoutput_normalize_high_ao2{
@@ -2314,8 +2314,8 @@ namespace modbus::devices::elhart::alphax_parameter
   //! Безопасное значение аналогового выхода AO1
   inline const menu::var<int16_t> aoutput_safe_value_ao1{{
     .default_value {0},
-    .min_value     {-32768},
-    .max_value     {32767}
+    .min_value     {-1000},
+    .max_value     {11000}
   }};
   //! Безопасное значение аналогового выхода AO2
   inline const menu::var<int16_t> aoutput_safe_value_ao2{

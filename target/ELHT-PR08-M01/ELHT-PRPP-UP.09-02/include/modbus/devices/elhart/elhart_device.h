@@ -33,11 +33,8 @@ namespace modbus::devices::elhart
     //! Дополнительные состояния устройств ЭЛХАРТ
     enum STATE : uint8_t
     {
-      STATE_START_READ_MODIFICATION = device::iDevice::STATE_SIZE,
-      STATE_READ_MODIFICATION,
-      STATE_START_READ_VERSION,
+      STATE_READ_MODIFICATION = device::iDevice::STATE_SIZE,
       STATE_READ_VERSION,
-      STATE_START_READ_SERIAL_NUMBER,
       STATE_READ_SERIAL_NUMBER
     };
 

@@ -1,5 +1,6 @@
 # Бинарники
 /build/*
+/target/utils/*
 
 # Backup
 *.bak
